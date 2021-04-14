@@ -1,0 +1,9 @@
+﻿  pch.cpp
+  attempt.cpp
+  dllmain.cpp
+  Generating Code...
+  .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+  attempt.obj : /DEBUG:FASTLINK is not supported when managed code is present; restarting link with /DEBUG:FULL
+  attempt.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+     Creating library C:\Users\barfr\source\repos\attemptDll\Debug\attemptDll.lib and object C:\Users\barfr\source\repos\attemptDll\Debug\attemptDll.exp
+  attemptDll.vcxproj -> C:\Users\barfr\source\repos\attemptDll\Debug\attemptDll.dll
