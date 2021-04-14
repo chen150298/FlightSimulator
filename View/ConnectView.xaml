@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="ap.View.ConnectView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ap.View"
+             mc:Ignorable="d" d:DesignWidth="800" Height="53.2">
+    <Grid Background="White" Height="53" VerticalAlignment="Top">
+        <Label Content="Ip:" HorizontalAlignment="Left" Margin="31,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Port:" HorizontalAlignment="Left" Margin="183,8,0,0" VerticalAlignment="Top"/>
+        <Label Content="CSV File Path:" HorizontalAlignment="Left" Margin="370,5,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="ip" HorizontalAlignment="Left" Height="23" Margin="58,11,0,0" TextWrapping="Wrap" Text="127.0.0.1" VerticalAlignment="Top" Width="120" SelectionBrush="#FFABADB3" BorderBrush="#FF9FEDDC"/>
+        <TextBox x:Name="port" HorizontalAlignment="Left" Height="23" Margin="221,10,0,0" TextWrapping="Wrap"  Text="5400" VerticalAlignment="Top" Width="120" SelectionBrush="#FFABADB3" BorderBrush="#FF9FEDDC"/>
+        <TextBox x:Name="path" HorizontalAlignment="Left" Height="23" Margin="456,8,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222" SelectionBrush="#FFABADB3" BorderBrush="#FF9FEDDC"/>
+        <Button x:Name="connection" Content="Connect" HorizontalAlignment="Left" VerticalAlignment="Top" Width="66" Height="30" BorderBrush="{x:Null}" Foreground="Black" Background="#FF9FEDDC" Margin="706,10,0,0" Click="Button_Click"/>
+    </Grid>
+</UserControl>

@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="ap.View.DataGraphView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ap.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Canvas x:Name="DataGraph" HorizontalAlignment="Left" Height="189" Margin="535,0,0,0" VerticalAlignment="Top" Width="255" Initialized="DataGraph_Initialized"/>
+        <ListView x:Name="List" HorizontalAlignment="Left" Height="450" VerticalAlignment="Top" Width="251" FontSize="16" Margin="0,0,0,-0.4" SelectionChanged="List_SelectionChanged" Initialized="List_Initialized">
+            <ListView.View>
+                <GridView>
+                    <GridView.ColumnHeaderContainerStyle>
+                        <Style TargetType="GridViewColumnHeader">
+                            <Setter Property="Visibility" Value="Collapsed" />
+                        </Style>
+                    </GridView.ColumnHeaderContainerStyle>
+                    <GridViewColumn Header="Id" DisplayMemberBinding="{Binding Id}" Width="0"/>
+                    <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}" Width="350"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Canvas x:Name="CorrelativeGraph" HorizontalAlignment="Left" Height="189" Margin="256,0,0,0" VerticalAlignment="Top" Width="255"/>
+        <Label x:Name="Text" FontSize="20" HorizontalAlignment="Left" Margin="251,194,0,0" VerticalAlignment="Top" Width="549" Height="39"/>
+        <Canvas x:Name="LinearRegGraph" HorizontalAlignment="Left" Height="217" Margin="256,233,0,-0.4" VerticalAlignment="Top" Width="544"/>
+
+
+
+
+
+
+
+    </Grid>
+</UserControl>

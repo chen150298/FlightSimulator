@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="ap.View.TimeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ap.View"
+             mc:Ignorable="d" Width="959.253" Height="87.147">
+    <Grid Margin="0,0,-137.8,0.2">
+        <Slider x:Name="Slider" Value="{Binding SliderBar}" Margin="174,30,304,31" VerticalAlignment="Center" Height="26" Width="597"/>
+        <Button x:Name="stop" Height="48" Margin="116,18,906,0" VerticalAlignment="Top" Width="53" Click="Stop" >
+            <Image Source="/View/images/stop_image.png"/>
+        </Button>
+        <Button x:Name="play" Height="48" Margin="10,18,1012,0" VerticalAlignment="Top" Width="53" Click="Play">
+            <Image Source="/View/images/play_image.png"/>
+        </Button>
+        <Button x:Name="pause" Height="48" Margin="63,18,959,0" VerticalAlignment="Top" Width="53" Click="Pause">
+            <Image Source="/View/images/pause_image.png"/>
+        </Button>
+        <ComboBox x:Name="speed" Margin="801,30,226,31" Width="70" SelectedIndex="3">
+            <ComboBoxItem x:Name="option0" Content="X 0.25" Selected="Option0_Selected"/>
+            <ComboBoxItem x:Name="option1" Content="X 0.5" Selected="Option1_Selected"/>
+            <ComboBoxItem x:Name="option2" Content="X 0.75" Selected="Option2_Selected"/>
+            <ComboBoxItem x:Name="option3" Content="X 1" Selected="Option3_Selected" />
+            <ComboBoxItem x:Name="option4" Content="X 1.25" Selected="Option4_Selected"/>
+            <ComboBoxItem x:Name="option5" Content="X 1.5" Selected="Option5_Selected"/>
+            <ComboBoxItem x:Name="option6" Content="X 1.75" Selected="Option6_Selected"/>
+            <ComboBoxItem x:Name="option7" Content="X 2" Selected="Option7_Selected"/>
+        </ComboBox>
+
+
+    </Grid>
+
+
+
+</UserControl>
